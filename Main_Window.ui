@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1007</width>
+    <height>733</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>coconut_v_1_2_by_Yves</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>GUI/title.png</normaloff>GUI/title.png</iconset>
+  </property>
+  <property name="windowOpacity">
+   <double>1.000000000000000</double>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout_5" stretch="0,1,0">
+    <property name="spacing">
+     <number>3</number>
+    </property>
+    <property name="margin">
+     <number>1</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget_file_selection" native="true">
+      <layout class="QVBoxLayout" name="verticalLayout_3">
+       <property name="spacing">
+        <number>3</number>
+       </property>
+       <property name="margin">
+        <number>1</number>
+       </property>
+       <item>
+        <widget class="QWidget" name="widget_local_file_selection" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="0,1,0">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <property name="margin">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_new_file_path">
+            <property name="text">
+             <string>Local File:</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="lineEdit_new_file_path">
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>16777215</height>
+             </size>
+            </property>
+            <property name="readOnly">
+             <bool>false</bool>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QPushButton" name="button_browser_file_new">
+            <property name="text">
+             <string>Select File</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="QWidget" name="widget_compare_selection" native="true">
+         <layout class="QHBoxLayout" name="horizontalLayout_3" stretch="0,1,0,1,0,0">
+          <property name="spacing">
+           <number>3</number>
+          </property>
+          <property name="margin">
+           <number>1</number>
+          </property>
+          <item>
+           <widget class="QLabel" name="label_new_file_selection">
+            <property name="text">
+             <string>Compared File</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_new_file">
+            <property name="maximumSize">
+             <size>
+              <width>400</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLabel" name="label_old_file_selection">
+            <property name="text">
+             <string>Control File</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QComboBox" name="comboBox_old_file">
+            <property name="maximumSize">
+             <size>
+              <width>400</width>
+              <height>16777215</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <spacer name="horizontalSpacer">
+            <property name="orientation">
+             <enum>Qt::Horizontal</enum>
+            </property>
+            <property name="sizeHint" stdset="0">
+             <size>
+              <width>199</width>
+              <height>20</height>
+             </size>
+            </property>
+           </spacer>
+          </item>
+          <item>
+           <widget class="QPushButton" name="start_compare">
+            <property name="text">
+             <string>Start Compare</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
+        </widget>
+       </item>
+       <item>
+        <widget class="Line" name="line_file">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item>
+     <widget class="QSplitter" name="splitter_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <widget class="QWidget" name="widget_log_info" native="true">
+       <property name="baseSize">
+        <size>
+         <width>410</width>
+         <height>610</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_4" stretch="0,1">
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <property name="margin">
+         <number>1</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_svn_info">
+          <property name="text">
+           <string>Log Info:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_log_line" native="true">
+          <layout class="QHBoxLayout" name="horizontalLayout_2" stretch="0,0">
+           <property name="spacing">
+            <number>3</number>
+           </property>
+           <property name="margin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QTableWidget" name="tableWidget_log_info">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>10</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="editTriggers">
+              <set>QAbstractItemView::NoEditTriggers</set>
+             </property>
+             <property name="sortingEnabled">
+              <bool>true</bool>
+             </property>
+             <property name="columnCount">
+              <number>4</number>
+             </property>
+             <attribute name="horizontalHeaderVisible">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="horizontalHeaderCascadingSectionResizes">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="verticalHeaderVisible">
+              <bool>false</bool>
+             </attribute>
+             <attribute name="verticalHeaderShowSortIndicator" stdset="0">
+              <bool>false</bool>
+             </attribute>
+             <column>
+              <property name="text">
+               <string>Revision</string>
+              </property>
+              <property name="textAlignment">
+               <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Author</string>
+              </property>
+              <property name="textAlignment">
+               <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Date</string>
+              </property>
+              <property name="textAlignment">
+               <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string>Message</string>
+              </property>
+             </column>
+            </widget>
+           </item>
+           <item>
+            <widget class="Line" name="line_info_right">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget_res_tree" native="true">
+       <property name="baseSize">
+        <size>
+         <width>230</width>
+         <height>601</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2" stretch="0,0">
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <property name="margin">
+         <number>1</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_compare_res">
+          <property name="text">
+           <string>Compare Result:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget_res_line" native="true">
+          <layout class="QGridLayout" name="gridLayout" rowstretch="0,1" columnstretch="0,1,0,0">
+           <property name="margin">
+            <number>1</number>
+           </property>
+           <property name="spacing">
+            <number>3</number>
+           </property>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_search_item">
+             <property name="text">
+              <string>Search Widget</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLineEdit" name="lineEdit_search_item"/>
+           </item>
+           <item row="0" column="2">
+            <widget class="QPushButton" name="button_search_item">
+             <property name="text">
+              <string>Search</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3" rowspan="2">
+            <widget class="Line" name="line_res_tree_right">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0" colspan="3">
+            <widget class="QTreeWidget" name="tree_widget_res_tree">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>500</height>
+              </size>
+             </property>
+             <property name="lineWidth">
+              <number>1</number>
+             </property>
+             <property name="autoExpandDelay">
+              <number>-1</number>
+             </property>
+             <property name="allColumnsShowFocus">
+              <bool>false</bool>
+             </property>
+             <property name="columnCount">
+              <number>2</number>
+             </property>
+             <attribute name="headerVisible">
+              <bool>true</bool>
+             </attribute>
+             <attribute name="headerDefaultSectionSize">
+              <number>200</number>
+             </attribute>
+             <column>
+              <property name="text">
+               <string notr="true">Widget Name</string>
+              </property>
+              <property name="textAlignment">
+               <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+              </property>
+             </column>
+             <column>
+              <property name="text">
+               <string notr="true">Widget Status</string>
+              </property>
+              <property name="textAlignment">
+               <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+              </property>
+             </column>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="widget_res_detail" native="true">
+       <property name="baseSize">
+        <size>
+         <width>215</width>
+         <height>601</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_7" stretch="0,1">
+        <property name="spacing">
+         <number>3</number>
+        </property>
+        <property name="margin">
+         <number>1</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label_res_detail">
+          <property name="text">
+           <string>Widget Info:</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QSplitter" name="splitter">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <widget class="QWidget" name="widget_show_item" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout" stretch="1,0">
+            <property name="spacing">
+             <number>0</number>
+            </property>
+            <property name="margin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_resource">
+              <property name="minimumSize">
+               <size>
+                <width>200</width>
+                <height>200</height>
+               </size>
+              </property>
+              <property name="autoFillBackground">
+               <bool>false</bool>
+              </property>
+              <property name="midLineWidth">
+               <number>0</number>
+              </property>
+              <property name="text">
+               <string>Show_Picture_Resource</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="Line" name="line_seg">
+              <property name="orientation">
+               <enum>Qt::Horizontal</enum>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+          <widget class="QWidget" name="widget_detail" native="true">
+           <layout class="QGridLayout" name="gridLayout_2" rowstretch="0,1" columnstretch="0,1">
+            <property name="margin">
+             <number>1</number>
+            </property>
+            <property name="spacing">
+             <number>3</number>
+            </property>
+            <item row="0" column="0">
+             <widget class="QLabel" name="label_refer_text">
+              <property name="text">
+               <string>Reference</string>
+              </property>
+             </widget>
+            </item>
+            <item row="0" column="1">
+             <widget class="QLineEdit" name="lineEdit_refer_text"/>
+            </item>
+            <item row="1" column="0" colspan="2">
+             <widget class="QTreeWidget" name="tree_widget_res_detail">
+              <property name="minimumSize">
+               <size>
+                <width>10</width>
+                <height>380</height>
+               </size>
+              </property>
+              <property name="columnCount">
+               <number>3</number>
+              </property>
+              <attribute name="headerDefaultSectionSize">
+               <number>150</number>
+              </attribute>
+              <column>
+               <property name="text">
+                <string notr="true">Category</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Control File Attribute</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </column>
+              <column>
+               <property name="text">
+                <string>Compared File Attribute</string>
+               </property>
+               <property name="textAlignment">
+                <set>AlignHCenter|AlignVCenter|AlignCenter</set>
+               </property>
+              </column>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+     </widget>
+    </item>
+    <item>
+     <widget class="Line" name="line_compare">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
