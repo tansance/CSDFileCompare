@@ -86,7 +86,7 @@ pip install PyQt4-4.11.4-cp27-cp27m-win_amd64.whl
 PyQt自带的设计GUI的图形界面，可以通过拖动控件至窗体直接设计GUI，用起来很方便，设计后的文档会保存为*.ui文件   
 ###### 配置
 打开Pycharm->File->Settings   
-![Pycharm Settings](http://github.com/tansance/CSDFileCompare/raw/master/images/setting.png)   
+![Pycharm Settings](https://raw.githubusercontent.com/tansance/CSDFileCompare/master/images/setting.png)   
 点击Tools->External Tools->'+'   
 ![Pycharm External Tools](http://github.com/tansance/CSDFileCompare/raw/master/images/adding_external_tool.png)   
 如图配置   
