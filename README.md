@@ -88,15 +88,15 @@ PyQt自带的设计GUI的图形界面，可以通过拖动控件至窗体直接�
 打开Pycharm->File->Settings   
 ![Pycharm Settings](https://raw.githubusercontent.com/tansance/CSDFileCompare/master/images/setting.png)   
 点击Tools->External Tools->'+'   
-![Pycharm External Tools](http://github.com/tansance/CSDFileCompare/raw/master/images/adding_external_tool.png)   
+![Pycharm External Tools](http://raw.githubusercontent.com/tansance/CSDFileCompare/master/images/adding_external_tool.png)   
 如图配置   
-![Pycharm QTDesigner](http://github.com/tansance/CSDFileCompare/raw/master/images/designer.png)   
+![Pycharm QTDesigner](http://raw.githubusercontent.com/tansance/CSDFileCompare/master/images/designer.png)   
 
 ##### Pycharm中添加pyuic    
 PyQt自带的\*.ui文件转\*.py文件的工具，转换为\*.py文件后，程序才能直接引用。由于可能频繁多次将\*.ui文件转换为\*.py文件，旧的\*.py文件会被直接覆盖掉，因此任何与GUI布局无关的代码都不要写在转换后的\*.py文件中。
 ###### 配置
 同样的地方，再点一次'+'开始按图配置   
-![Pycharm pyuic](http://github.com/tansance/CSDFileCompare/raw/master/images/pyuic.png)   
+![Pycharm pyuic](http://raw.githubusercontent.com/tansance/CSDFileCompare/master/images/pyuic.png)   
 
 ### 1.4 pyinstaller安装   
 python用来将程序打包成\*.exe文件比较好用的一个工具。
@@ -130,13 +130,13 @@ GUI/dist|包含打包好的可运行程序*.exe|
 ### 2.2使用说明   
 #### 2.2.1对比csd文件
 <font color="red">所选文件必须在SVN版本控制下，否则会弹窗报错</font>
-![browse_and_compare](http://github.com/tansance/CSDFileCompare/raw/master/images/browse_and_compare.gif)
+![browse_and_compare](http://raw.githubusercontent.com/tansance/CSDFileCompare/master/images/browse_and_compare.gif)
 
 #### 2.2.2查看控件详细信息
-![Widget_info](http://github.com/tansance/CSDFileCompare/raw/master/images/Widget_info.gif)
+![Widget_info](http://raw.githubusercontent.com/tansance/CSDFileCompare/master/images/Widget_info.gif)
 
 #### 2.2.3其他功能   
-![Other_function](http://github.com/tansance/CSDFileCompare/raw/master/images/Other_function.gif)
+![Other_function](http://raw.githubusercontent.com/tansance/CSDFileCompare/master/images/Other_function.gif)
 
 ## 3.pyinstaller打包资源文件
 ### 3.1 pyinstaller使用方式：
